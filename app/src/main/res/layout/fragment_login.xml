@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login_screen.LoginFragment"
+    android:background="@color/screen_bg">
+
+    <Button
+        android:id="@+id/authButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/round_corner_view_button"
+        android:text="@string/auth_text"
+        android:textColor="@color/text_button"
+        />
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Unsplash2_0" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/light_grey</item>
+        <item name="colorOnPrimary">@color/grey</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MultiChoiceAlertDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:background">@color/alert_dialog_bg</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="colorControlNormal">@color/text_primary</item>
+        <item name="colorControlActivated">@color/text_primary</item>
+        <item name="dialogCornerRadius">20dp</item>
+
+    </style>
+
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar">
+
+    </style>
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/purple_500</item>
+        <item name="colorControlActivated">@color/purple_700</item>
+    </style>
+
+    <style name="Theme.Unsplash2_0" parent="Base.Theme.Unsplash2_0" />
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search_screen.SearchFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/fsAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_bg">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/fsToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back"
+            >
+
+            <EditText
+                android:id="@+id/fsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/text_button"
+                android:textColor="@color/text_primary"
+                android:ems="10"
+                android:paddingStart="@dimen/margin_16"
+                android:hint="@string/fs_search_text"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/grey"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/fsDeleteButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:src="@drawable/outline_delete_circle_24"
+                android:visibility="visible" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationCache="false"
+        android:background="@color/screen_bg"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/fsTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="top"
+            app:tabTextColor="@color/text_primary" />
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
